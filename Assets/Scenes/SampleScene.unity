@@ -293,7 +293,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.59300005, y: 0.1168889}
   m_AnchorMax: {x: 0.95100003, y: 0.88311106}
-  m_AnchoredPosition: {x: 1.0175171, y: -0.002105713}
+  m_AnchoredPosition: {x: 1.017456, y: -0.0021972656}
   m_SizeDelta: {x: -1.0031128, y: -5.659973}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &384944308
@@ -582,7 +582,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.61700004, y: 0.03618222}
   m_AnchorMax: {x: 0.96800005, y: 0.11713301}
-  m_AnchoredPosition: {x: -3.9354248, y: 0.29022217}
+  m_AnchoredPosition: {x: -3.9354248, y: 0.29003906}
   m_SizeDelta: {x: 11.612305, y: 1.0448914}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &830339023
@@ -678,6 +678,7 @@ GameObject:
   - component: {fileID: 895829661}
   - component: {fileID: 895829663}
   - component: {fileID: 895829662}
+  - component: {fileID: 895829664}
   m_Layer: 5
   m_Name: Map
   m_TagString: Untagged
@@ -701,7 +702,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0926875, y: 0.1168889}
   m_AnchorMax: {x: 0.5246252, y: 0.88311106}
-  m_AnchoredPosition: {x: -2, y: 0.000030517578}
+  m_AnchoredPosition: {x: -2, y: 0}
   m_SizeDelta: {x: 0.777771, y: -5.17157}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &895829662
@@ -742,6 +743,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 895829660}
   m_CullTransparentMesh: 1
+--- !u!114 &895829664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895829660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6685ebf725647514baeb0b833dfc1f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _size: 5
+  _image: {fileID: 895829662}
+  _basicHeight: 1
+  _button: {fileID: 830339023}
+  _waterColor: {r: 0.13710396, g: 0.69674575, b: 0.745283, a: 1}
+  _sandColor: {r: 1, g: 0.99888, b: 0.18396229, a: 1}
+  _earthColor: {r: 0.174962, g: 0.7924528, b: 0, a: 1}
+  _mountainColor: {r: 0.7169812, g: 0.4903044, b: 0, a: 1}
 --- !u!1 &1329402578
 GameObject:
   m_ObjectHideFlags: 0
