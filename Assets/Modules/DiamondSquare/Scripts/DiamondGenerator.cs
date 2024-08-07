@@ -13,6 +13,8 @@ public class DiamondGenerator : MonoBehaviour
     [SerializeField] private float _standartHeight;
     [SerializeField] private float _angleHeight;
 
+    [SerializeField] private TileMapFiller _tileMapFiller;
+
     [SerializeField] private Button _button;
 
     [SerializeField] private Color _waterColor;
@@ -55,6 +57,8 @@ public class DiamondGenerator : MonoBehaviour
                 sprite.texture.Apply();
 
                 _image.sprite = sprite;
+
+                _tileMapFiller.FillTilemap(map);
 
                 Debug.Log($"Изображение имеет размер {texture.width}x{texture.height}");
             }
