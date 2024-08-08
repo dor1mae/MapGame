@@ -58,7 +58,7 @@ public class DiamondGenerator : MonoBehaviour
 
                 _image.sprite = sprite;
 
-                _tileMapFiller.FillTilemap(map);
+                _tileMapFiller.FillTilemap(map, (int)Mathf.Pow(2, _size) + 1);
 
                 Debug.Log($"Изображение имеет размер {texture.width}x{texture.height}");
             }

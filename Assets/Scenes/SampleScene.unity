@@ -431,7 +431,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3786042, y: 0.03618222}
   m_AnchorMax: {x: 0.62335426, y: 0.119}
-  m_AnchoredPosition: {x: -1.5999756, y: -0.75061035}
+  m_AnchoredPosition: {x: -1.5999756, y: -0.7507324}
   m_SizeDelta: {x: 0.9197998, y: -2.498619}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &830339023
@@ -924,6 +924,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _grass: {fileID: 11400000, guid: 06ec472b259a0114295d3d576ba60fe4, type: 2}
+  _tree: {fileID: 11400000, guid: fa4822271e3ced3489241e17d5e73038, type: 2}
+  _water: {fileID: 11400000, guid: c27ac2c63d21c294f9afacb84081df8c, type: 2}
+  _deepwater: {fileID: 11400000, guid: b8b737123a3433448817e11887f6338e, type: 2}
+  _sand: {fileID: 11400000, guid: 7b3ab7d7b76f34c4ba7e3c1ed4c72f81, type: 2}
+  _mountain: {fileID: 11400000, guid: 17f2ef41e65c27e4c810ec4bfde9c073, type: 2}
+  _highmountain: {fileID: 11400000, guid: 693aa0a413f670143a0c2d765a69c100, type: 2}
 --- !u!1 &1941989670
 GameObject:
   m_ObjectHideFlags: 0
