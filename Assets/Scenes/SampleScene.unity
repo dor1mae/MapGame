@@ -409,6 +409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _action: {fileID: -944628639613478452, guid: f6f2cdb0a9209e544aee18f61d5a94c8, type: 3}
+  _powerOfSwapping: 10
 --- !u!1 &830339021
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,6 +740,18 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 029c75d1-ab2b-47fb-99d8-23c58bcdec5c
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 29d27fd2-cc08-49d2-b3ce-f51f2848f962
+    m_ActionName: Player/Zoom[/Mouse/scroll/y]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ff64d70b-8436-4c4c-a1ca-3d03e05c8945
+    m_ActionName: Player/Swap[/Mouse/middleButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 42b06273-8dfd-473c-8999-7425969778ee
+    m_ActionName: Player/Pointer[/Mouse/position]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player
