@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class DiamondGenerator : MonoBehaviour
 {
     [SerializeField] private int _size;
-    [SerializeField] private Image _image;
 
     [SerializeField] private float _outsideHeight;
     [SerializeField] private float _roughness;
@@ -14,8 +13,6 @@ public class DiamondGenerator : MonoBehaviour
     [SerializeField] private float _angleHeight;
 
     [SerializeField] private TileMapFiller _tileMapFiller;
-
-    [SerializeField] private Button _button;
 
     [SerializeField] private Color _waterColor;
     [SerializeField] private Color _sandColor;
@@ -33,36 +30,33 @@ public class DiamondGenerator : MonoBehaviour
         }
     }
 
-    private void Start()
+    public void Generate(UnityEngine.UIElements.Image _image)
     {
-        _button.onClick.RemoveAllListeners();
-        _button.onClick.AddListener(() =>
+        {
+            var generator = new DiamondHeightMap(_size, _outsideHeight, _roughness, _standartHeight, _angleHeight);
+            var map = generator.GenerateMap();
+            var texture = new Texture2D((int)Mathf.Pow(2, _size) + 1, (int)Mathf.Pow(2, _size) + 1);
+
+            for (int i = 0; i < texture.width; i++)
             {
-                var generator = new DiamondHeightMap(_size, _outsideHeight, _roughness, _standartHeight, _angleHeight);
-                var map = generator.GenerateMap();
-                var texture = new Texture2D((int)Mathf.Pow(2, _size) + 1, (int)Mathf.Pow(2, _size) + 1);
-
-                for(int i = 0; i < texture.width; i++)
+                for (int j = 0; j < texture.height; j++)
                 {
-                    for(int j = 0; j < texture.height; j++)
-                    {
-                        texture.SetPixel(i, j, CalcColor(map[i, j]));
-                    }
+                    texture.SetPixel(i, j, CalcColor(map[i, j]));
                 }
-                texture.Apply();
-
-                var sprite = Sprite.Create(texture, new Rect(0f, 0f, texture.width, texture.height), new Vector2(0, 0), 100f);
-                sprite.texture.anisoLevel = 0;
-                sprite.texture.filterMode = FilterMode.Point;
-                sprite.texture.Apply();
-
-                _image.sprite = sprite;
-
-                _tileMapFiller.FillTilemap(map, (int)Mathf.Pow(2, _size) + 1);
-
-                Debug.Log($"Изображение имеет размер {texture.width}x{texture.height}");
             }
-            );
+            texture.Apply();
+
+            var sprite = Sprite.Create(texture, new Rect(0f, 0f, texture.width, texture.height), new Vector2(0, 0), 100f);
+            sprite.texture.anisoLevel = 0;
+            sprite.texture.filterMode = FilterMode.Point;
+            sprite.texture.Apply();
+
+            _image.sprite = sprite;
+
+            _tileMapFiller.FillTilemap(map, (int)Mathf.Pow(2, _size) + 1);
+
+            Debug.Log($"Изображение имеет размер {texture.width}x{texture.height}");
+        }
     }
 
     private Color CalcColor(float height)
