@@ -1,0 +1,82 @@
+.button-style {
+    height: 100px;
+    width: 484px;
+    position: relative;
+    top: 0;
+    left: 0;
+    align-items: auto;
+    align-self: auto;
+    transform-origin: center;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    border-bottom-right-radius: 19px;
+    border-bottom-left-radius: 19px;
+    border-top-width: 10px;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 10px;
+    font-size: 32px;
+    background-color: rgb(198, 207, 255);
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    justify-content: flex-start;
+    margin-bottom: 105px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out-elastic;
+}
+
+.button-style:hover {
+    height: 100px;
+    width: 484px;
+    position: relative;
+    top: 0;
+    left: 0;
+    align-items: auto;
+    align-self: auto;
+    transform-origin: center;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    border-bottom-right-radius: 19px;
+    border-bottom-left-radius: 19px;
+    border-top-width: 10px;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 10px;
+    font-size: 32px;
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    justify-content: flex-start;
+    margin-bottom: 105px;
+    scale: 1.05 1.05;
+}
+
+.button-style:active {
+    height: 100px;
+    width: 484px;
+    position: relative;
+    top: 0;
+    left: 0;
+    align-items: auto;
+    align-self: auto;
+    transform-origin: center;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    border-bottom-right-radius: 19px;
+    border-bottom-left-radius: 19px;
+    border-top-width: 10px;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 10px;
+    font-size: 32px;
+    background-color: rgb(107, 113, 144);
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    justify-content: flex-start;
+    margin-bottom: 105px;
+}

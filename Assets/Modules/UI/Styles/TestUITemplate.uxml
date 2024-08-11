@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Modules/UI/Styles/UIStyle.uss?fileID=7433441132597879392&amp;guid=100b17ba3a41f8c42ba87c130101b104&amp;type=3#UIStyle" />
+    <ui:VisualElement name="Background" style="flex-grow: 1; justify-content: space-between; align-self: auto; align-items: center;">
+        <ui:VisualElement name="mini_map" style="flex-grow: 1; align-self: stretch; width: 300px; height: 300px; background-color: rgba(198, 207, 255, 0); align-items: center; justify-content: space-between; transform-origin: center; -unity-background-scale-mode: stretch-to-fill; flex-wrap: nowrap; flex-direction: column; position: absolute; top: 738px; left: 44px; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px; background-image: none;" />
+        <ui:VisualElement name="info_panel" style="flex-grow: 0; background-color: rgb(198, 207, 255); width: 100%; height: 75px; justify-content: flex-start; flex-direction: column-reverse; align-items: auto; align-self: auto; -unity-slice-bottom: 0;" />
+        <ui:Button text="Сгенерировать" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Generate_Button" class="button-style" style="align-items: auto; align-self: auto; border-bottom-width: 10px; margin-bottom: 41px;" />
+    </ui:VisualElement>
+</ui:UXML>
