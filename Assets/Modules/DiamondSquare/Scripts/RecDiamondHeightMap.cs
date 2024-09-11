@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using static UnityEngine.Rendering.DebugUI;
 
-public class DiamondHeightMap
+public class RecDiamondHeightMap
 {
     private float[,] _map;
     private ReferenceArray<float> map;
@@ -18,7 +18,7 @@ public class DiamondHeightMap
     private Func<float, float, float> OnUnityRandom;
     private System.Random _random;
 
-    public DiamondHeightMap(int size, float basicHeight, float roughness, float standart, float angle)
+    public RecDiamondHeightMap(int size, float basicHeight, float roughness, float standart, float angle)
     {
         _size = (int)Mathf.Pow(2, size) + 1; //алгоритм работает с картой размера 2 в степени i + 1
         _map = new float[_size, _size];

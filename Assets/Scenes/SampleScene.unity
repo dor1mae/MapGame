@@ -197,11 +197,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6685ebf725647514baeb0b833dfc1f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _size: 7
-  _outsideHeight: 4.36
-  _roughness: 17.8
-  _standartHeight: -0.37
-  _angleHeight: 7.2
+  _size: 8
+  _roughness: 1.06
+  _standartHeight: 1
+  _seed: 12345
   _tileMapFiller: {fileID: 1866133871}
   _waterColor: {r: 0.20069422, g: 0.5842242, b: 0.7735849, a: 1}
   _sandColor: {r: 0.8962264, g: 0.8566901, b: 0.35933605, a: 1}

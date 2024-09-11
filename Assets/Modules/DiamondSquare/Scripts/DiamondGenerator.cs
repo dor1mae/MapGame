@@ -7,10 +7,9 @@ public class DiamondGenerator : MonoBehaviour
 {
     [SerializeField] private int _size;
 
-    [SerializeField] private float _outsideHeight;
     [SerializeField] private float _roughness;
     [SerializeField] private float _standartHeight;
-    [SerializeField] private float _angleHeight;
+    [SerializeField] private int _seed;
 
     [SerializeField] private TileMapFiller _tileMapFiller;
 
@@ -22,19 +21,13 @@ public class DiamondGenerator : MonoBehaviour
     [SerializeField] private Color _deepWaterColor;
     [SerializeField] private Color _highMountainColor;
 
-    private void OnValidate()
-    {
-        if(_standartHeight == _outsideHeight)
-        {
-            _outsideHeight++;
-        }
-    }
-
     public void Generate(UnityEngine.UIElements.Image _image)
     {
         {
-            var generator = new DiamondHeightMap(_size, _outsideHeight, _roughness, _standartHeight, _angleHeight);
-            var map = generator.GenerateMap();
+            //var generator = new RecDiamondHeightMap(_size, _outsideHeight, _roughness, _standartHeight, _angleHeight);
+
+            var generator = new IterDiamondHeightMap(_size, _roughness, _seed, _standartHeight);
+            var map = generator.Generate();
             var texture = new Texture2D((int)Mathf.Pow(2, _size) + 1, (int)Mathf.Pow(2, _size) + 1);
 
             for (int i = 0; i < texture.width; i++)
