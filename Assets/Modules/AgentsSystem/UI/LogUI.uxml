@@ -1,0 +1,7 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Modules/AgentsSystem/UI/testStyle.uss?fileID=7433441132597879392&amp;guid=0457f5af5f6cb404bbc4e18f0dc73a8c&amp;type=3#testStyle" />
+    <engine:VisualElement name="root" style="flex-grow: 1; flex-direction: row;">
+        <engine:ListView name="eventsList" virtualization-method="DynamicHeight" binding-source-selection-mode="AutoAssign" style="width: 1476px; height: 100%; flex-wrap: wrap; background-color: rgb(224, 170, 170); flex-direction: column-reverse; justify-content: flex-end; flex-basis: 100%; flex-shrink: 1; flex-grow: 1;" />
+        <engine:ListView name="agentsList" enabled="false" style="width: 30%; height: 100%; flex-wrap: wrap; background-color: rgb(164, 161, 111); opacity: 1;" />
+    </engine:VisualElement>
+</engine:UXML>
