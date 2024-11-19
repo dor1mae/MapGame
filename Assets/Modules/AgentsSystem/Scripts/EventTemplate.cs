@@ -5,8 +5,10 @@ namespace AgentsSystem {
     public class EventTemplate {
         public int id;
         public string name;
-        public string description;
-        public int[] agentIDs;
+        public string description; //как сделать описание так, чтоб туда можно было подавать agents[id].name?
+        public int[] agentIDs; 
+        //то, как хранятся агенты, должно соответствовать описанию и действию - возможно, нужно подавать проверки в каком-то порядке
+        //чтобы, например, в событии "Агент А возненавидел агента Б" ничего не было перепутано
         public List<IRequrement> requirements;
         //public List<Action<Agent>> results; //пока не знаю, как оно будет
 
