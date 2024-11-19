@@ -1,0 +1,29 @@
+.message-box {
+    background-color: rgb(181, 196, 221);
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-left-width: 2px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-width: 2px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+}
+
+.message-name {
+    font-size: 18px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-self: stretch;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.message-description {
+    white-space: normal;
+    text-overflow: ellipsis;
+}

@@ -1,11 +1,12 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <engine:VisualElement style="background-color: rgba(179, 208, 255, 0.84);">
-        <engine:Label text="Label" double-click-selects-word="true" name="nameLabel" style="font-size: 18px; white-space: normal; border-bottom-color: rgb(0, 0, 0); border-bottom-width: 2px;">
+    <Style src="project://database/Assets/Modules/AgentsSystem/UI/logStyle.uss?fileID=7433441132597879392&amp;guid=0457f5af5f6cb404bbc4e18f0dc73a8c&amp;type=3#logStyle" />
+    <engine:VisualElement class="message-box" style="background-color: rgba(179, 208, 255, 0.84);">
+        <engine:Label text="LabelName" name="nameLabel" class="message-name" style="font-size: 18px; white-space: normal; border-bottom-color: rgb(0, 0, 0); border-bottom-width: 0;">
             <Bindings>
                 <engine:DataBinding property="text" data-source-path="name" binding-mode="ToTarget" />
             </Bindings>
         </engine:Label>
-        <engine:Label text="Label" style="white-space: normal;">
+        <engine:Label text="Label" name="descriptionLabel" class="message-description">
             <Bindings>
                 <engine:DataBinding property="text" data-source-path="description" binding-mode="ToTarget" />
             </Bindings>
